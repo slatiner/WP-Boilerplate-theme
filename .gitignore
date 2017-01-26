@@ -1,0 +1,5 @@
+# ignore unneeded files
+.DS_Store
+
+# keep .gitkeep
+!.gitkeep

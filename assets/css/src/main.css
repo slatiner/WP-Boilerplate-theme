@@ -1,0 +1,22 @@
+/* GROUPS ALL CSS FILES */
+
+/* remember to change the fonts folder manually on the FA css file */
+@import '../../vendor/font-awesome/css/font-awesome.css';
+
+/* structure */
+@import 'structure/variables.css';
+@import 'structure/reset.css';
+@import 'structure/util.css';
+@import 'structure/grid.css';
+@import 'structure/menu.css';
+@import 'structure/forms.css';
+
+@import 'theme/header.css';
+@import 'theme/footer.css';
+@import 'theme/headings.css';
+@import 'theme/tables.css';
+
+@import 'theme/pages/frontpage.css';
+@import 'theme/pages/single.css';
+
+@import 'theme/modules/share.css';

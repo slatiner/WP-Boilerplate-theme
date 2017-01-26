@@ -1,0 +1,20 @@
+/*  COLOR  ====================================================================== */
+
+$text-color: 	      #333333;
+
+$teal: 			        #3794A3;
+$orange:            #F37044;
+$gray:			        #DDDDDD;
+$purple:            #3F4456;
+$cream:             #DCD1C0;
+
+/*  FONTS ================================================================= */
+
+$base-size:		16px;
+$sans-serif:	sans-serif;
+$background-color: white;
+
+$light:        300;
+$medium:       500;
+$semibold:     700;
+$bold:         900;

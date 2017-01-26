@@ -1,0 +1,36 @@
+/*  SINGLE STYLES ======================================================================= */
+.article-header {
+    height: 300px;
+    padding-top: 220px;
+    background-size: cover;
+    background-position: center center;
+
+     @media only screen and (min-width: 480px) {
+        height: 350px;
+        padding-top: 270px;
+    }
+     @media only screen and (min-width: 720px) {
+       height: 450px;
+       padding-top: 320px;
+     }
+}
+
+/* article content */
+.article-content{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    padding-right:0px;
+
+    @media only screen and (min-width: 480px) {
+      width: 80%;
+    }
+    @media only screen and (min-width: 720px) {
+      width: 70%;
+    }
+}
+.article-content p {
+  margin-bottom: 20px;
+}

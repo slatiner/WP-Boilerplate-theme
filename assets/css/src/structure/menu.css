@@ -1,0 +1,86 @@
+/*  MENU STYLES ======================================================================= */
+
+/* collapsible menu */
+.responsive-nav {
+    position: relative;
+    z-index: 1;
+    color: white;
+    float:right;
+    margin-top: -25px;
+
+    @media only screen and (min-width: 480px) {
+      margin-top:0;
+    }
+
+    &:after {
+        content: "☰";
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 5px 15px;
+        border: 2px solid;
+        font-weight: $bold;
+        transition: all .3s ease-in-out;
+        z-index: 2;
+        position: relative;
+        cursor: pointer;
+
+        @media only screen and (min-width: 480px) {
+          padding: 8px 15px;
+        }
+    }
+}
+.responsive-nav.is-open {
+    &:after {
+        content: "✕";
+        border-color: transparent;
+    }
+}
+
+.site-nav__main {
+    position: fixed;
+    top: 0;
+    right: -340px;
+    height: 100%;
+    width: 340px;
+    background: $purple;
+    transition: all .3s ease-in-out;
+    padding-left: 30px;
+}
+.is-open .site-nav__main {
+  right: 0;
+}
+
+/* menu ul element */
+.menu-list {
+    margin-top: 100px;
+}
+.menu-list > li{
+    @media screen and (min-width: 720px) {
+        display: block;
+    }
+}
+
+
+/* main nav */
+.site-nav__main a {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    padding:10px 15px;
+    font-weight: $medium;
+}
+.site-nav__main .active a {
+  color: $orange;
+}
+
+
+/* dropdown */
+.menu__dropdown {
+	position: relative;
+}
+.menu__dropdown-menu {
+	  padding: 5px 20px 5px 10px;
+}

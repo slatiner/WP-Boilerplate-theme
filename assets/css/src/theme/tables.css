@@ -1,0 +1,68 @@
+/*table css */
+table{
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 1.1rem;
+    font-weight: 500;
+
+  @media only screen and (min-width: 480px) {
+    border-collapse: collapse;
+    table-layout: auto;
+    overflow-x: auto;
+    }
+}
+table thead {
+    font-style: italic;
+    text-transform:uppercase;
+    text-align: left;
+    color: white;
+
+ @media only screen and (min-width: 480px) {
+        background-color: $cream;
+  }
+}
+table th {
+    display: none;
+
+    @media only screen and (min-width: 480px) {
+        display:table-cell;
+        content: attr(data-label);
+        padding: 5px 5px 5px 10px;
+    }
+}
+table tr {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    display: block;
+
+ @media only screen and (min-width: 480px) {
+    display:table-row;
+    }
+}
+table td {
+    text-align: right;
+    display: block;
+
+ @media only screen and (min-width: 480px) {
+    padding: 10px 0px 10px 15px;
+    text-align: left;
+    display:table-cell;
+    }
+}
+table td:before {
+    background-color: $cream;
+    color: white;
+    font-style: italic;
+    float: none;
+    text-transform: uppercase;
+    padding: 0px 5px 0px 3px;
+    content: attr(data-label);
+    float: left;
+    margin-right: 3px;
+    height: auto;
+
+@media only screen and (min-width: 480px) {
+      display:none;
+    }
+}
